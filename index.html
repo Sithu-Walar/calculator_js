@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator js</title>
+</head>
+<body>
+    <div class="cal">
+        <div class="display">0</div>
+        <div class="keypad">
+            
+                <table class="key-table">
+                    <tr>
+                        <td>
+                            <div class="key" onclick="allClear()">AC</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="clearLastKey()">C</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey('%')">%</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey('/')">&divide;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="key" onclick="displayKey(7)">7</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey(8)">8</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey(9)">9</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey('*')">&times;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="key" onclick="displayKey(4)">4</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey(5)">5</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey(6)">6</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey('-')">&minus;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="key" onclick="displayKey(1)">1</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey(2)">2</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey(3)">3</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="displayKey('+')">&plus;</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="key" onclick="displayKey(0)" style="width: 190px;">0</div>
+                        </td>
+                        
+                        <td>
+                            <div class="key" onclick="displayKey('.')">.</div>
+                        </td>
+                        <td>
+                            <div class="key" onclick="calculate()">=</div>
+                        </td>
+                    </tr>
+                    
+                </table>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
